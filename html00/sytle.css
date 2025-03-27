@@ -1,0 +1,10 @@
+.titulo{
+    color: blue;
+    
+}
+
+
+.titulo:hover{
+    color: red;
+    scale: .5;
+}
