@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-shadow: 10px 10px 20px red;
+        }
+        figure{
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <H1>Random picture</H1>
+
+    <label for="num" id="num">Cuantas imagenes quieres?</label>
+    <input type="text">
+    <label for="num" id="id">Elige un id para la imagen</label>
+    <input type="text">
+    <button id="btn" onclick="imprimir()">Enviar</button>
+    <div id="demo"></div>
+    <script>
+    
+    
+        let ejemplo = document.getElementById("demo");
+        ejemplo.innerHTML = "hola";
+
+        function imprimir(){
+            let numImagenes = document.getElementById("num").value;
+            const idImagen = document.getElementById("id").value;
+            
+            contenedor = document.getElementById("demo");
+
+            for (let i = 0; i < numero; i++) {
+                contenedor.innerHTML += picture(idImagen);
+            }
+        }
+
+        const picture = (id) =>{
+            return `<figure>
+                <img src="https://picsum.photos/id/${id}/200" alt="jhon">
+                <figcaption>Jhon</figcaption>
+            </figure>`;
+        };
+
+
+
+
+    </script>
+</body>
+</html>
