@@ -13,6 +13,14 @@
             width: 300px;
             display: inline-block;
         }
+        label{
+            display: block;
+            margin: 10px;
+        }
+        input{
+            display: block;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -35,9 +43,10 @@
             const idImagen = document.getElementById("id").value;
             
             contenedor = document.getElementById("demo");
+            imagen = picture(idImagen);
 
-            for (let i = 0; i < numero; i++) {
-                contenedor.innerHTML += picture(idImagen);
+            for (let i = 0; i < numImagenes; i++) {
+                contenedor.innerHTML += imagen;
             }
         }
 
@@ -47,10 +56,6 @@
                 <figcaption>Jhon</figcaption>
             </figure>`;
         };
-
-
-
-
     </script>
 </body>
 </html>
