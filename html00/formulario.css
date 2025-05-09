@@ -46,7 +46,6 @@ label {
     display: block;
 }
 
-/* Campos de entrada */
 input {
     padding: 10px;
     margin-bottom: 15px;
@@ -57,7 +56,6 @@ input {
     font-size: 16px;
 }
 
-/* Botón de enviar */
 button {
     padding: 10px;
     background-color: #007bff;
@@ -75,7 +73,6 @@ button:hover {
     background-color: #0056b3; 
 }
 
-/* Estilo para inputs en foco */
 input:focus {
     border-color: #007bff; 
     outline: none; 
